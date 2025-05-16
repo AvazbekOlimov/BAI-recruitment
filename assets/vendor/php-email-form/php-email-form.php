@@ -7,7 +7,6 @@ class PHP_Email_Form {
   public $subject;
   public $ajax = false;
   public $messages = array();
-  public $smtp = false;
 
   function add_message($content, $label = '', $length = 0) {
     $this->messages[] = "$label: $content";
@@ -28,4 +27,3 @@ class PHP_Email_Form {
     }
   }
 }
-?>
